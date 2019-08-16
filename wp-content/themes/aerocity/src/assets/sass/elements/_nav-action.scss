@@ -1,0 +1,110 @@
+.nav-action {
+    position: absolute;
+    right: 28px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+
+    @include max-w(920px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.nav-action__element {
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+    z-index: 2;
+    transition: .6s;
+}
+
+.nav-action__element_first {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition-delay: .2s;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background-color: $theme;
+        right: 0;
+        top: 0;
+        width: 10px;
+        height: 2px;
+        transform: rotate(0);
+        transition: .2s;
+        transition-delay: 0s;
+        opacity: 0;
+
+        @include max-w(920px) {
+            width: 8px;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        background-color: $theme;
+        right: 0;
+        top: 0;
+        width: 10px;
+        height: 2px;
+        transform: rotate(0);
+        transition: .2s;
+        transition-delay: 0s;
+        opacity: 0;
+
+        @include max-w(920px) {
+            width: 8px;
+        }
+    }
+}
+
+.nav-action__element_second {
+    top: 50%;
+    left: 0;
+    transform: rotate(90deg) translateY(-50%);
+    transition-delay: .2s;
+    opacity: 1;
+}
+
+//on hover
+.nav-action__prototype:hover {
+    .nav-action__element_first {
+        background-color: $theme;
+        transition-delay: 0s;
+
+        &:before {
+            transform: rotate(45deg);
+            transition-delay: .5s;
+            top: -4px;
+            opacity: 1;
+
+            @include max-w(920px) {
+                top: -3px;
+            }
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+            transition-delay: .5s;
+            top: 4px;
+            opacity: 1;
+
+            @include max-w(920px) {
+                top: 3px;
+            }
+        }
+    }
+
+    .nav-action__element_second {
+        transform: rotate(0deg) translateY(-50%);
+        transition-delay: 0s;
+        opacity: 0;
+    }
+}

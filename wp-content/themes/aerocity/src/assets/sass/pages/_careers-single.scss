@@ -1,0 +1,173 @@
+.section-hero_careers {
+    background-color: $black;
+    min-height: 430px;
+    height: auto;
+
+    @include max-w(620px) {
+        min-height: 1px;
+    }
+
+    .hero-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 125px 25px;
+
+        @include max-w(875px) {
+            min-height: 1px;
+        }
+
+        @include max-w(620px) {
+            padding: 100px 25px 125px;
+        }
+    }
+
+    .post-archive__title {
+        width: 50%;
+
+        @include max-w(620px) {
+            width: 100%;
+        }
+    }
+
+    .hero-content__info_careers * {
+        margin-bottom: 0;
+    }
+
+    .link {
+        padding-bottom: 0;
+
+        @include max-w(620px) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.hero-content__info_careers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include max-w(620px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.single-career__wrapper {
+    padding: 0 8px;
+}
+
+.single-career__content {
+    position: relative;
+    min-height: 300px;
+    z-index: 2;
+    width: 955px;
+    max-width: 100%;
+    margin: -80px auto 0;
+    padding: 52px 0 130px;
+    background-color: $white;
+
+    @include max-w(920px) {
+        padding: 28px 10px 180px;
+    }
+}
+
+.single-career__content {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: .53px;
+    color: #848484;
+
+    @include max-w(620px) {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: .4px;
+    }
+
+    .page-container {
+        width: 850px;
+        max-width: 100%;
+    }
+
+    p, span, ul, ol, em {
+        font-weight: normal;
+    }
+
+    p, span, ul, ol, em, strong {
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: .53px;
+        color: #848484;
+        margin-bottom: 35px;
+
+        @include max-w(620px) {
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: .4px;
+        }
+
+    }
+
+    * li {
+        margin-bottom: 10px;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.singe-career__form {
+    margin: -110px auto 0;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 110px;
+
+    div.gform_confirmation_message {
+        font-size: 20px;
+        margin-top: 40px;
+
+        * {
+            font-size: 20px;
+        }
+    }
+
+    @include max-w(768px) {
+        margin: -160px auto 0;
+        padding-bottom: 80px;
+    }
+
+    .theme-form {
+        padding-top: 80px;
+
+        @include max-w(620px) {
+            padding-top: 40px;
+        }
+
+        //submit btn
+        button.btn_submit-gravity {
+            @include max-w(620px) {
+                margin: 0 auto;
+            }
+        }
+
+        &:before {
+            top: 105px;
+
+            @include max-w(620px) {
+                top: 75px;
+            }
+        }
+    }
+
+    .page-container {
+        max-width: 850px;
+
+        @include max-w(768px) {
+            padding-left: 11px;
+            padding-right: 11px;
+        }
+    }
+}

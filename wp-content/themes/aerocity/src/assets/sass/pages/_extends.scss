@@ -1,0 +1,15 @@
+.image-section_left {
+    background-repeat: no-repeat;
+    background-size: 470px 460px;
+    background-position: left top;
+
+    @include max-w(620px) {
+        background-position: -328px 0;
+    }
+}
+
+.image-section_right {
+    background-repeat: no-repeat;
+    background-size: 470px 460px;
+    background-position: top right;
+}

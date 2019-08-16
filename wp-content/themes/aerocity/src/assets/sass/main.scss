@@ -1,0 +1,57 @@
+//  Импорт файлов
+@import 'normalize-scss';
+@include normalize();
+
+@import '~slick-carousel/slick/slick';
+@import '~jquery-nice-select/scss/nice-select';
+@import '~aos/dist/aos.css';
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'base';
+@import 'typography';
+@import 'wp-classes';
+
+@import 'elements/form-elements';
+@import 'elements/buttons';
+@import 'elements/nav-action';
+@import 'elements/slider-control';
+@import 'elements/share-social';
+
+@import 'block/header';
+@import 'block/footer';
+@import 'block/social';
+@import 'block/headline';
+@import 'block/common__info-section';
+@import 'block/page-content__item';
+@import 'block/modal';
+@import 'block/subscribe-form';
+@import 'block/variation-content';
+@import 'block/theme-form';
+@import 'block/payment-form';
+@import 'block/section-anchor';
+@import 'block/section-hero';
+
+@import 'pages/extends';
+@import 'pages/home';
+@import 'pages/city-jets';
+@import 'pages/city-flyers';
+@import 'pages/sales';
+@import 'pages/sales-single';
+@import 'pages/maintenance';
+@import 'pages/contact';
+@import 'pages/stories';
+@import 'pages/stories-single';
+@import 'pages/trips';
+@import 'pages/trips-single';
+@import 'pages/careers';
+@import 'pages/careers-single';
+@import 'pages/resources';
+@import 'pages/partnerships';
+@import 'pages/policy';
+@import 'pages/payment';
+@import 'pages/about';
+@import 'pages/error-page';
+@import 'pages/common-archives';
+@import 'pages/common';

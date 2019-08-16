@@ -1,0 +1,35 @@
+.irs--square .irs-line {
+  background-color: #dedede;
+}
+.irs--square .irs-bar {
+  background-color: black;
+}
+.irs--square .irs-shadow {
+  background-color: #dedede;
+}
+.irs--square .irs-handle {
+  border: 3px solid black;
+  background-color: white;
+}
+.irs--square .irs-handle.state_hover,
+.irs--square .irs-handle:hover {
+  background-color: #f0f6ff;
+}
+.irs--square .irs-min,
+.irs--square .irs-max {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.irs--square .irs-from,
+.irs--square .irs-to,
+.irs--square .irs-single {
+  background-color: black;
+  color: white;
+}
+
+.irs--square .irs-grid-pol {
+  background-color: #dedede;
+}
+.irs--square .irs-grid-text {
+  color: silver;
+}

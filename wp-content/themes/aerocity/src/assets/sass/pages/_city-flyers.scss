@@ -1,0 +1,48 @@
+.page-template-template-city-flyers .hero-content__info-left {
+    padding-top: 10px;
+}
+
+.section-school {
+    .page-container {
+        @include max-w(620px) {
+            padding: 0 8px;
+        }
+    }
+
+    .variation-content__content-inner:before {
+        @include max-w(920px) {
+            top: 50px;
+        }
+    }
+
+    .variation-content__item-headline *:not(strong) {
+        font-weight: 400;
+    }
+
+    .variation-content__item-headline strong {
+        font-weight: 700;
+    }
+
+    .section-school__inner {
+        padding: 50px 0 205px;
+        background-repeat: no-repeat;
+        background-size: 470px 460px;
+        background-position: top right;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        @include max-w(768px) {
+            background-size: 330px 325px;
+            background-position: top 0 right -140px;
+            padding: 50px 0 105px;
+        }
+    }
+
+    .headline {
+        margin-bottom: 50px;
+
+        @include max-w(620px) {
+            margin-bottom: 35px;
+        }
+    }
+}

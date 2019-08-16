@@ -1,0 +1,321 @@
+//modification from relative container
+.hero-justify {
+    display: flex;
+}
+
+.hero-justify .hero-content {
+    justify-content: space-between;
+
+    .hero-content__info-left {
+        border: 0;
+    }
+
+    .hero-content__info-right {
+        max-width: 710px;
+    }
+}
+
+//section-hero
+.section-hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 665px;
+    max-height: 1000px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    @include max-w(620px) {
+        height: auto;
+    }
+
+    &_archive {
+        min-height: 500px;
+        height: auto;
+
+        @include max-w(875px) {
+            min-height: 290px;
+        }
+
+        .hero-content {
+            padding: 100px 25px 40px;
+
+            @include max-w(875px) {
+                display: flex;
+                min-height: 290px;
+                justify-content: flex-end;
+            }
+        }
+
+        .hero-content__info {
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 57px;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+
+                @include max-w(620px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    .section-hero__decoration-start {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, .001) 69.66%);
+        mix-blend-mode: normal;
+        opacity: .75;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+
+    .section-hero__decoration-end {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, .001) 29.9%);
+        mix-blend-mode: normal;
+        opacity: .75;
+        transform: rotate(-180deg);
+        z-index: 2;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+
+    .archive-hero__decoration {
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        mix-blend-mode: normal;
+        position: absolute;
+        opacity: .5;
+        z-index: 2;
+        left: 0;
+        top: 0;
+    }
+}
+
+.hero-content {
+    @extend .page-container;
+    display: flex;
+    position: relative;
+    color: $white;
+    padding: 60px 25px;
+    z-index: 3;
+
+    @include max-w(875px) {
+        padding: 100px 25px 40px;
+        flex-direction: column;
+        min-height: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+}
+
+.hero-content__info-left {
+    max-width: 420px;
+    min-height: 170px;
+    width: 100%;
+    border-right: 1px solid rgb(110, 108, 108);
+    padding: 30px 50px 0 0;
+
+    @include max-w(875px) {
+        max-width: 600px;
+        border: 0;
+        padding: 0;
+    }
+}
+
+.hero-content__info-right {
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 0 0 25px;
+
+    @include max-w(875px) {
+        padding: 20px 0 0;
+    }
+}
+
+.hero-content__info {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: capitalize;
+        line-height: 35px;
+        margin-bottom: 22px;
+
+        @include max-w(768px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        @include max-w(480px) {
+            em {
+                display: block;
+            }
+        }
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    p, span:not(.social-nav__item-icon), ul:not(.social-nav), ol, li:not(.social-nav__item):not(.social-nav__item *) {
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: .53px;
+        margin-bottom: 15px;
+
+        @include max-w(768px) {
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    .social-nav__item-icon {
+        display: block;
+        font-size: 20px;
+        color: #808080;
+        transition: $transition;
+
+        @include max-w(875px) {
+            color: $white;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    a:not(.social-link) {
+        color: $theme;
+        position: relative;
+        @extend .link;
+    }
+
+    .hero-section__decorated-text {
+        color: $theme;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+
+        @include max-w(620px) {
+            font-size: 11px;
+        }
+    }
+}
+
+/* background video styles */
+.video-background {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+.vid-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
+}
+.vid-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+}
+.vid-info a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0,0,0,.5);
+    transition: .6s background;
+    border-bottom: none;
+    margin: 1rem auto;
+    text-align: center;
+}
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+        height: 300%;
+        top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+        width: 300%;
+        left: -100%;
+    }
+}
+@media all and (max-width: 600px) {
+    .vid-info {
+        width: 50%;
+        padding: .5rem;
+    }
+    .vid-info h1 {
+        margin-bottom: .2rem;
+    }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym {
+        display: none;
+    }
+}
+
+.video-background__file {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+*::-ms-backdrop, .video-background__file {
+    height: auto;
+} /* IE11 */
+
+.video-file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}

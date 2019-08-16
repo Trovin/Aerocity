@@ -1,0 +1,183 @@
+.section-hero__career {
+    min-height: 430px;
+    height: auto;
+    background-color: $black;
+
+    @include max-w(875px) {
+        min-height: inherit;
+    }
+
+    .hero-content {
+        padding: 75px 25px;
+
+        @include max-w(875px) {
+            min-height: inherit;
+            padding: 150px 35px 35px;
+        }
+
+        @include max-w(768px) {
+            min-height: inherit;
+            padding: 100px 35px 35px;
+        }
+
+        &__info-left {
+            min-height: inherit;
+        }
+
+        .hero-content__info h1, .hero-content__info h2, .hero-content__info h3, .hero-content__info h4, .hero-content__info h5, .hero-content__info h6 {
+            @include max-w(875px) {
+                font-size: 21px;
+                line-height: 25px;
+            }
+        }
+
+        .hero-content__info p, .hero-content__info span:not(.social-nav__item-icon), .hero-content__info ul:not(.social-nav), .hero-content__info ol, .hero-content__info li:not(.social-nav__item) {
+            @include max-w(875px) {
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.careers-items {
+    padding: 45px 0 180px;
+    margin-top: 90px;
+    background-repeat: no-repeat;
+    background-size: 470px 460px;
+    background-position: top right;
+
+    @include max-w(768px) {
+        margin-top: 20px;
+        padding: 45px 0 90px;
+        background-repeat: no-repeat;
+        background-size: 320px 310px;
+        background-position: top 0 right -200px;
+    }
+
+    .headline {
+        margin-bottom: 55px;
+
+        @include max-w(768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .page-container {
+        @include max-w(768px) {
+            padding: 0 8px;
+        }
+    }
+
+    .variation-content__item-headline {
+        @include max-w(920px) {
+            min-height: 55px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .variation-content__content-inner:before {
+        @include max-w(920px) {
+            height: 65px;
+            top: 60px;
+        }
+    }
+}
+
+.careers-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 35px 40px 35px 60px;
+    position: relative;
+    border-left: 8px solid $theme;
+
+    @include max-w(820px) {
+        padding: 25px 10px 25px 25px;
+    }
+
+    @include max-w(680px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 10px 50px 22px;
+    }
+
+    .btn {
+        min-width: 200px;
+    }
+}
+
+.careers-form__wrapper-info {
+    margin-right: 40px;
+
+    @include max-w(680px) {
+        margin-right: 0;
+    }
+}
+
+.careers-form__sub-title {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ababab;
+
+    @include max-w(980px) {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+    * {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #ababab;
+
+        @include max-w(980px) {
+            font-size: 12px;
+            letter-spacing: 1.3px;
+        }
+    }
+}
+
+.careers-form__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: .997px;
+    color: $black;
+
+    @include max-w(980px) {
+        font-size: 21px;
+        line-height: 28px;
+        letter-spacing: .7px;
+    }
+
+    @include max-w(680px) {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    * {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: .997px;
+        color: $black;
+
+        @include max-w(980px) {
+            font-size: 21px;
+            line-height: 28px;
+            letter-spacing: .7px;
+        }
+
+        @include max-w(680px) {
+            margin-bottom: 30px;
+            display: block;
+        }
+    }
+}

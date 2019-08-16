@@ -1,0 +1,234 @@
+/* section-hero_single-sales */
+.section-hero_single-sales {
+    background-color: $black;
+
+    @include max-w(620px) {
+        min-height: inherit;
+    }
+}
+
+.section-hero_single-sales .section-hero__decoration-start {
+    @include max-w(620px) {
+        height: 240px;
+    }
+}
+
+.section-hero_single-sales .section-hero__decoration-end {
+    @include max-w(620px) {
+        display: none;
+    }
+}
+
+.hero-content_sales {
+    padding: 45px 25px;
+    flex-direction: column;
+
+    @include max-w(875px) {
+        justify-content: flex-end;
+    }
+
+    @include max-w(620px) {
+        padding: 320px 25px 40px;
+        min-height: inherit;
+    }
+}
+
+.hero-content__info-header {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.hero-content__info-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.single-sales__year {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 1.31px;
+
+    @include max-w(768px) {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: .8px;
+        margin-bottom: 10px;
+    }
+
+    * {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 25px;
+        letter-spacing: 1.31px;
+        margin: 0;
+        padding: 0;
+
+        @include max-w(768px) {
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: .8px;
+        }
+    }
+}
+
+.single-sales__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 82px;
+
+    @include max-w(920px) {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    @include max-w(768px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    * {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 70px;
+        line-height: 82px;
+        margin: 0 0 15px;
+        padding: 0;
+
+        @include max-w(920px) {
+            font-size: 44px;
+            line-height: 48px;
+            margin: 0 0 10px;
+        }
+
+        @include max-w(768px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+
+.single-sales__price {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+
+    @include max-w(768px) {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    * {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 33px;
+
+        @include max-w(768px) {
+            font-size: 21px;
+            line-height: 25px;
+        }
+    }
+}
+
+.anchor-link_sales {
+    @extend .link;
+    color: $theme;
+    padding-bottom: 0;
+
+    @include max-w(620px) {
+        display: none;
+    }
+}
+
+//sales-slider
+.sales-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    @include max-w(620px) {
+        height: 240px;
+    }
+}
+
+.sale-slider__item {
+    height: 100vh;
+    min-height: 665px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include max-w(620px) {
+        min-height: 240px;
+        height: 240px;
+    }
+}
+
+.sales-slider__control {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    padding: 0 15px;
+
+    @include max-w(620px) {
+        left: 0;
+        bottom: inherit;
+        top: 240px;
+        padding: 0;
+    }
+}
+
+/* section-specs */
+.section-specs {
+    padding: 100px 0 110px;
+
+    @include max-w(620px) {
+        padding: 30px 0 85px;
+    }
+
+    .headline {
+        margin-bottom: 35px;
+
+        @include max-w(620px) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.section-specs__header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-specs__item {
+    width: 50%;
+    margin-bottom: 20px;
+
+    @include max-w(620px) {
+        width: 100%;
+    }
+
+    &:nth-child(odd) {
+        padding-right: 22px;
+
+        @include max-w(620px) {
+            padding: 0;
+        }
+    }
+
+    &:nth-child(even) {
+        padding-left: 22px;
+
+        @include max-w(620px) {
+            padding: 0;
+        }
+    }
+}

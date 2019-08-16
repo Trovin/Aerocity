@@ -1,0 +1,26 @@
+$bodyBg: rgba(242, 242, 242, 1);
+$textColor: #333;
+$theme: rgba(255, 204, 0, 1);
+$dark-theme: rgba(239, 191, 0, 1);
+
+$white: #fff;
+$black: #000;
+
+$transition: .3s;
+
+$linkColor: #55b3f3;
+$linkColorHover: darken($linkColor, 20%);
+
+$fontFamily: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+$fontSize: 15px;
+$fontWeight: 400; // Regular
+$lineHeight: 28px;
+
+$containerPadding: 25px;
+$containerWidth: 1235px + ($containerPadding * 2);
+
+// $screen-xs: 0;
+// $screen-sm: 480px;
+// $screen-md: 768px;
+// $screen-lg: 992px;
+// $screen-xl: 1200px;

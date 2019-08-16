@@ -1,0 +1,37 @@
+.share-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-social_single-post {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    top: 2.5px;
+
+    @include max-w(620px) {
+        right: inherit;
+    }
+
+    div.heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul li {
+        margin-left: 5px !important;
+    }
+}
+
+.share-social_label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1.22px;
+    color: #c8c8c8;
+    text-transform: uppercase;
+    margin: -5px 10px 0 0;
+
+    @include max-w(620px) {
+        font-size: 10px;
+    }
+}

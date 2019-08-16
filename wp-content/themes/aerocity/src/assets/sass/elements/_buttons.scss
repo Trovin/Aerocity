@@ -1,0 +1,162 @@
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 21px 25px;
+    font-size: 15px;
+    line-height: 80%;
+    letter-spacing: .53px;
+    background-color: #ffcc00;
+    text-transform: capitalize;
+    color: #000;
+    transition: $transition;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+
+    @include max-w(768px) {
+        font-size: 13px;
+        padding: 18px 25px;
+    }
+
+    &_modal {
+        position: absolute;
+        min-width: 140px;
+        right: 0;
+        bottom: 0;
+    }
+
+    &_large {
+        padding: 21px 30px;
+
+        @include max-w(768px) {
+            padding: 20px 30px;
+        }
+
+        &_info {
+            min-width: 140px;
+            margin-top: 10px;
+            padding: 24px 30px;
+
+            @include max-w(768px) {
+                margin-top: 0;
+                padding: 20px 30px;
+            }
+        }
+    }
+
+    &_email {
+        padding: 24px 30px;
+
+        @include max-w(768px) {
+            padding: 20px 30px;
+        }
+    }
+
+    &_contact {
+        width: 140px;
+        padding: 21px 40px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        transform: rotate(90deg) translate(-42px, -43px);
+        text-align: center;
+        z-index: 5;
+
+        @include max-w(768px) {
+            width: 130px;
+            padding: 16px 20px;
+            transform: rotate(90deg) translate(-42px, -44px);
+        }
+    }
+
+    &_stories {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        padding: 24px 25px;
+
+        @include max-w(920px) {
+            display: none;
+        }
+    }
+
+    &_stories-mobile {
+        display: none;
+        top: 80px;
+        left: 50%;
+        font-size: 15px;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+        min-width: 180px;
+        padding: 24px 25px;
+
+        @include max-w(920px) {
+            display: inline-block;
+        }
+    }
+
+    &_variation {
+        min-width: 180px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 24px 25px;
+
+        @include max-w(768px) {
+            min-width: 140px;
+            padding: 18px 25px;
+        }
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: $dark-theme;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    &:hover {
+        color: $black;
+
+        &:before {
+            left: 0;
+        }
+    }
+
+    //modal button
+    &_updates {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: .42px;
+        padding: 15px 30px;
+        color: $white;
+        background-color: #141414;
+
+        &:before {
+            background-color: #242424;
+        }
+
+        &:hover {
+            color: $white;
+
+            &:before {
+                left: 0;
+            }
+        }
+    }
+}

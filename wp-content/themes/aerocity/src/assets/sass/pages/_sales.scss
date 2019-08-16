@@ -1,0 +1,94 @@
+.page-sales__section-info {
+    padding: 105px 0 50px;
+    text-align: center;
+
+    @include max-w(620px) {
+        padding: 50px 0 55px;
+    }
+}
+
+.page-sales__info-content {
+    width: 100%;
+    max-width: 795px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: .57px;
+    color: #464545;
+
+    @include max-w(620px) {
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: .4px;
+    }
+
+    *:not(:last-child) {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: .57px;
+        color: #464545;
+        margin: 0 0 30px;
+        padding: 0;
+
+        @include max-w(620px) {
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: .4px;
+        }
+
+    }
+}
+
+.section-items__inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 470px 460px;
+    background-position: top right;
+    padding: 115px 0 165px;
+
+    @include max-w(768px) {
+        background-size: 300px 300px;
+        background-position: top 0 right -150px;
+        padding: 65px 0 100px;
+    }
+
+    .page-container {
+        @include max-w(620px) {
+            padding: 0 8px;
+        }
+    }
+}
+
+.page-sales__items-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.page-sales__item-year {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ababab;
+}
+
+.page-sales__item-title {
+    display: block;
+    width: 100%;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: .99px;
+    color: $white;
+
+    @include max-w(920px) {
+        font-size: 21px;
+    }
+}

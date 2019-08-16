@@ -1,0 +1,79 @@
+.error404 .wrapper {
+    height: auto;
+
+    @include max-w(620px) {
+        .section-hero_stories .hero-content__info {
+            margin-bottom: 50px;
+        }
+    }
+
+    @include max-w(875px) {
+        .section-hero_stories .hero-content {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.hero-content_404 .hero-content__info {
+    width: 100%;
+}
+
+.section-hero .hero-content__info .page404__decorated-text {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.5px;
+    color: $theme;
+    line-height: normal;
+    margin-bottom: 10px;
+
+    * {
+        font-size: 13px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1.5px;
+        color: $theme;
+    }
+}
+
+.section-hero .hero-content__info .page404__main-info {
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $white;
+    margin-bottom: 25px;
+
+    @include max-w(768px) {
+        font-size: 21px;
+    }
+
+    * {
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $white;
+
+        @include max-w(768px) {
+            font-size: 21px;
+        }
+    }
+}
+
+.hero-content__info a.btn-404 {
+    color: $black;
+    padding: 22px 25px;
+    font-weight: 500;
+
+    &:hover {
+        color: $black;
+        font-weight: 500;
+    }
+}

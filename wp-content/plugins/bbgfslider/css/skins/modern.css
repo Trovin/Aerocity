@@ -1,0 +1,18 @@
+.irs--modern {  height: 55px;}
+.irs--modern.irs-with-grid {  height: 55px;}
+.irs--modern .irs-line { background-color: #d1d6e0;  background: linear-gradient(to bottom, #e0e4ea 0%, #d1d6e0 100%);  border: 1px solid #a3adc1;}
+.irs--modern .irs-bar { background: #20b426;  background: linear-gradient(to bottom, #20b426 0%, #18891d 100%);}
+.irs--modern .irs-shadow {  background-color: rgba(209, 214, 224, 0.5);}
+.irs--modern .irs-handle {  border: 1px solid #a3adc1; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);}
+.irs--modern .irs-handle > i:nth-child(1) {  border: 1px solid #a3adc1;  background: white;}
+.irs--modern .irs-handle > i:nth-child(2) { background: #e9e6e6; background: linear-gradient(to bottom, white 0%, #e9e6e6 100%);}
+.irs--modern .irs-handle > i:nth-child(3) { border-left: 1px solid #a3adc1;  border-right: 1px solid #a3adc1;}
+.irs--modern .irs-handle.state_hover,
+.irs--modern .irs-handle:hover {  border-color: #7685a2;  background: #c3c7cd;  background: linear-gradient(to bottom, #ffffff 0%, #919ba5 30%, #ffffff 100%);}
+.irs--modern .irs-handle.state_hover > i:nth-child(1),.irs--modern .irs-handle:hover > i:nth-child(1) {  border-color: #7685a2;}
+.irs--modern .irs-handle.state_hover > i:nth-child(3),.irs--modern .irs-handle:hover > i:nth-child(3) {  border-color: #48536a;}
+.irs--modern .irs-min,.irs--modern .irs-max {  color: white;  background-color: #d1d6e0;}
+.irs--modern .irs-from,.irs--modern .irs-to,.irs--modern .irs-single { background-color: #20b426;  color: white;}
+.irs--modern .irs-from:before,.irs--modern .irs-to:before,.irs--modern .irs-single:before {  border-top-color: #20b426;}
+.irs--modern .irs-grid-pol {  background-color: #dedede;}
+.irs--modern .irs-grid-text {color: silver;}

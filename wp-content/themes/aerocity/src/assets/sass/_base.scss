@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: $fontFamily;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+body {
+    background-color: $bodyBg;
+    color: $textColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        color: $linkColorHover;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+section {
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.page-container {
+    max-width: $containerWidth;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.page-main {
+    position: relative;
+}
+
+//link
+.link {
+    display: inline-block;
+    transition: $transition;
+    position: relative;
+    padding-bottom: 8px;
+
+    &_theme {
+        color: $theme;
+        position: relative;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $theme;
+        transition: $transition;
+    }
+
+    @include min-w(992px) {
+        &:hover {
+            color: $theme;
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    @include max-w(991px) {
+        &:hover {
+            color: $theme;
+        }
+    }
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+.bold-style {
+    font-weight: 600;
+}
+
+.uppercase-style {
+    text-transform: uppercase;
+}

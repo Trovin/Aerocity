@@ -1,0 +1,77 @@
+.section-hero__payment {
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    @include max-w(520px) {
+        min-height: inherit;
+    }
+
+    .hero-content {
+        padding: 180px 15px;
+
+        @include max-w(520px) {
+            padding: 130px 15px 190px;
+        }
+    }
+
+    .hero-content__info-center {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 57px;
+        text-align: center;
+        color: $white;
+
+        @include max-w(768px) {
+            font-size: 34px;
+            line-height: 38px;
+        }
+
+        @include max-w(620px) {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        * {
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 57px;
+            text-align: center;
+            color: $white;
+
+            @include max-w(768px) {
+                font-size: 34px;
+                line-height: 38px;
+            }
+
+            @include max-w(620px) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.page-container_payment {
+    max-width: 850px;
+    padding-bottom: 140px;
+
+    @include max-w(620px) {
+        padding: 0 8px 120px;
+    }
+}
+
+.payment-form {
+    z-index: 3;
+    position: relative;
+    margin-top: -150px;
+
+    @include max-w(620px) {
+        margin-top: -100px;
+    }
+
+    .validation_error {
+        display: none;
+    }
+}

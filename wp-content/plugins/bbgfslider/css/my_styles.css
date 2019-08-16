@@ -1,0 +1,26 @@
+/* Base */
+.irs-line {
+  background-color: #e1e4e9;
+}
+/* Overlay */
+.irs-bar {  background-color: #ed5565;}
+/* Shadow */
+.irs-shadow {
+  background-color: #e1e4e9;
+}
+.irs-handle > i:first-child {  background-color: #da4453;}
+.irs-handle.state_hover > i:first-child,
+.irs-handle:hover > i:first-child {  background-color: #a43540;}
+
+.irs-min,
+.irs-max {  color: #999;  background-color: #e1e4e9;}
+
+.irs-from,
+.irs-to,
+.irs-single {  color: white;  background-color: #ed5565;}
+.irs-from:before,
+.irs-to:before,
+.irs-single:before {
+border-top-color: #ed5565;}
+.irs-grid-pol {  background-color: #e1e4e9;}
+.irs-grid-text {  color: #999;}

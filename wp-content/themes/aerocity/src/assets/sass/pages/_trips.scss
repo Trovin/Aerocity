@@ -1,0 +1,59 @@
+.trips-hero {
+    display: flex;
+}
+
+.trips-hero .section-hero {
+    min-height: 450px;
+
+    .hero-content {
+        justify-content: space-between;
+    }
+}
+
+h2.trip-archive__title {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 57px;
+    color: $white;
+
+    @include max-w(768px) {
+        font-size: 38px;
+        line-height: 47px;
+    }
+
+    * {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 57px;
+        color: $white;
+
+        @include max-w(768px) {
+            font-size: 38px;
+            line-height: 47px;
+        }
+    }
+}
+
+.page-trips__item {
+    width: 33.333%;
+}
+
+.post-type-archive-trips {
+    @include max-w(1200px) {
+        .page-content__item {
+            height: 320px;
+        }
+    }
+
+    @include max-w(860px) {
+        .page-trips__item {
+            width: 50%;
+        }
+    }
+
+    @include max-w(560px) {
+        .page-trips__item {
+            width: 100%;
+        }
+    }
+}

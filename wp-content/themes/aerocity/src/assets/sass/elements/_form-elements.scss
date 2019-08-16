@@ -1,0 +1,140 @@
+input[type='text'],
+input[type='email'],
+input[type='phone'],
+input[type='tel'],
+textarea, select {
+    font-family: inherit;
+    width: 100%;
+    max-width: 100%;
+    background: none;
+    outline: 0 none;
+    background-color: #222;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    padding: 14px 18px;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1.38px;
+    color: $white;
+    position: relative;
+    transition: $transition;
+    margin: 0 0 15px;
+    min-height: 57px; //fix for ie
+
+    &:focus, &:hover {
+        border-bottom: 1px solid $theme;
+    }
+}
+
+input[type='file'] {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 140px;
+}
+
+select {
+    height: 57px;
+}
+
+//upload file
+::-webkit-file-upload-button {
+    background: transparent;
+    color: transparent;
+    border: 0;
+    width: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ababab;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1.384px;
+    opacity: 1 !important;
+
+    @include max-w(620px) {
+        line-height: 20px;
+    }
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #ababab;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1.384px;
+    opacity: 1 !important;
+
+    @include max-w(620px) {
+        line-height: 20px;
+    }
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #ababab;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1.384px;
+    opacity: 1 !important;
+
+    @include max-w(620px) {
+        line-height: 20px;
+    }
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #ababab;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1.384px;
+    opacity: 1 !important;
+
+    @include max-w(620px) {
+        line-height: 20px;
+    }
+}
+
+//nice select
+div.nice-select {
+    width: 100%;
+    height: 57px;
+    background-color: #222;
+    border: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    color: $white;
+
+    li {
+        width: 100%;
+        background-color: #222;
+        color: $white;
+    }
+}
+
+.nice-select .list {
+    background-color: #222;
+    margin-top: 2px;
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: #333;
+    font-weight: normal;
+    color: $white;
+}
+
+/* datepicker styles */
+div.ui-datepicker {
+    background-color: #222 !important;
+    width: 240px;
+    padding: 0 10px;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+    color: $white;
+}
+
+.ui-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    color: $white;
+}

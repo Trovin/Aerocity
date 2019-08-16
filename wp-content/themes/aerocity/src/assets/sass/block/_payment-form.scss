@@ -1,0 +1,110 @@
+.theme-form_payment {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 95px 85px 100px;
+
+    @include max-w(1200px) {
+        padding: 95px 50px 100px;
+    }
+
+    @include max-w(620px) {
+        padding: 95px 22px 100px;
+    }
+
+    @include max-w(520px) {
+        padding: 45px 22px;
+    }
+
+    &:before {
+        top: 112px;
+
+        @include max-w(520px) {
+            top: 80px;
+        }
+    }
+
+    .form_subtitle:not(:first-child) {
+        margin-bottom: 12px;
+    }
+
+    .form_subtitle-detail {
+        margin-top: 55px;
+    }
+
+    .form_subtitle-description {
+        margin-top: 40px;
+    }
+
+    .ginput_card_security_code_icon {
+        display: none;
+    }
+
+    div.ginput_container_creditcard {
+        display: flex;
+        flex-wrap: wrap;
+
+        .ginput_full {
+            width: 100%;
+        }
+
+        .ginput_full:nth-child(2) {
+            display: flex;
+
+            @include max-w(520px) {
+                flex-direction: column;
+            }
+
+            .ginput_cardinfo_left {
+                width: 70%;
+
+                @include max-w(520px) {
+                    width: 100%;
+                    flex-direction: column;
+                }
+
+                .ginput_card_expiration_container {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 15px;
+
+                    @include max-w(520px) {
+                        flex-direction: column;
+                        display: flex;
+                        width: 100%;
+                        padding: 0;
+                    }
+
+                    div.nice-select {
+                        width: calc(50% - 7.5px);
+
+                        @include max-w(520px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .ginput_cardinfo_right {
+                width: 33.333%;
+
+                @include max-w(520px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .ginput_full:nth-child(3) {
+            display: flex;
+            order: 0;
+        }
+    }
+
+    .form_subtitle-description {
+        margin-top: 40px;
+    }
+
+    textarea {
+        height: 58px;
+    }
+}
