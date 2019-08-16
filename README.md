@@ -17,3 +17,5 @@
 домен для разработки: `example.local`  
 
 префикс для таблиц: `wp_`  
+
+DOMAIN NAME aerocity.test
