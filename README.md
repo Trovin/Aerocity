@@ -19,6 +19,7 @@
 префикс для таблиц: `wp_`  
 
 =========================
+
 DOMAIN NAME aerocity.test
 
 wp-admin 
